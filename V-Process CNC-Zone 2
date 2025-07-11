@@ -1,0 +1,28 @@
+
+----------------------------------------------------------------
+
+Transport Sheet Metal : 
+waituntil Workplace4.occupied and BufferSheetMetalA1.occupied
+wait 0
+//BufferSheetMetalA1.cont.move(@)
+@.goto(Workplace201)
+//Workplace4.goto(Workplace20)
+waituntil @.location = Workplace201
+wait 2
+// go back
+@.goto(Workplace41)
+Workplace20.cont.goto(Workplace4)
+wait 1 
+UnloadTruck(@)
+
+
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+----------------------------------------------------------------
